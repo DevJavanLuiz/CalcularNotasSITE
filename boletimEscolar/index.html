@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Cadastro Notas</title>
+</head>
+
+<body>
+    <div class="content">
+        <main class="content-forms">
+
+            <h1>CADASTRO NOTAS</h1>
+
+            <form action="#" id="form">
+                <label for="nomeAluno">NOME ALUNO :</label>
+                <input type="text" id="nomeAluno">
+
+                <div id="notas">
+                    <div id="quebraLinha">
+                    <label for="nota1">NOTA 01 :</label>
+                    <input type="text" id="nota1">
+                    <label for="nota2">NOTA 02 :</label>
+                    <input type="text" id="nota2">
+                    <label for="nota3">NOTA 03 :</label>
+                    <input type="text" id="nota3">
+                </div>
+            </div>
+                <button type="submit" id="btnEnviar">Enviar</button>
+            </form>
+
+            <table>
+                <thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4" id="tabelaNomeAluno">NOME : </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">NOTAS</td>
+                    </tr>
+                    <tr aria-rowspan="3">
+                        <td>NOTA 01</td>
+                        <td>NOTA 02</td>
+                        <td>NOTA 03</td>
+                    </tr>
+                    <tr>
+                        <td id="resNota1"></td>
+                        <td id="resNota2"></td>
+                        <td id="resNota3"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" id="tabelaMedia">MEDIA :</td>
+                    </tr>
+                </tfoot>
+                </thead>
+            </table>
+
+
+        </main>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
